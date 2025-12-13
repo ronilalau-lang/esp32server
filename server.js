@@ -59,7 +59,7 @@ ambientes.forEach((amb) => {
 
       try {
         await admin.messaging().send(message);
-        console.log(?? Notificação enviada: ${texto});
+        console.log(`?? Notificação enviada: ${texto}`);
       } catch (e) {
         console.error("? Erro ao enviar notificação:", e);
       }
