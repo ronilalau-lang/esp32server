@@ -46,8 +46,8 @@ ambientes.forEach((amb) => {
 
       const texto =
         novoValor === 1
-          ? ${amb.toUpperCase()} ficou CLARO ??
-          : ${amb.toUpperCase()} ficou ESCURO ??;
+          ? `${amb.toUpperCase()} ficou CLARO ??`
+          : `${amb.toUpperCase()} ficou ESCURO ??`;
 
       const message = {
         token: DEVICE_TOKEN,
