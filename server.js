@@ -27,12 +27,12 @@ const ultimoEstado = {};
 const db = admin.database();
 
 ambientes.forEach((amb) => {
-  const ref = db.ref(${amb}/ambiente);
+  const ref = db.ref(`${amb}/ambiente`);
 
   ref.on("value", async (snap) => {
     const novoValor = snap.val();
 
-    console.log(?? Ambiente ${amb} mudou para:, novoValor);
+    console.log(`?? Ambiente ${amb} mudou para:`, novoValor);
 
     // Primeira leitura: só registra
     if (ultimoEstado[amb] === undefined) {
