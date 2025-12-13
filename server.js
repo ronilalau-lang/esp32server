@@ -52,7 +52,7 @@ ambientes.forEach((amb) => {
       const message = {
         token: DEVICE_TOKEN,
         notification: {
-          title: Mudança no ${amb},
+          title: `Mudança no ${amb}`,
           body: texto
         }
       };
