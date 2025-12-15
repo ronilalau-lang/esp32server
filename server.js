@@ -15,6 +15,8 @@ admin.initializeApp({
   databaseURL: process.env.DATABASE_URL
 });
 
+console.log("?? Projeto Firebase:", admin.app().options.credential.projectId);
+
 // ?? Token salvo no Render
 const DEVICE_TOKEN = process.env.DEVICE_TOKEN;
 
