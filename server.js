@@ -20,6 +20,9 @@ console.log("?? Projeto Firebase:", admin.app().options.credential.projectId);
 // ?? Token salvo no Render
 const DEVICE_TOKEN = process.env.DEVICE_TOKEN;
 
+// TESTE TEMPORÁRIO
+console.log("DEVICE_TOKEN length:", DEVICE_TOKEN?.length);
+
 // ?? Ambientes monitorados
 const ambientes = ["quarto", "cozinha", "banheiro", "quintal"];
 
